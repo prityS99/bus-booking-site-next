@@ -18,9 +18,10 @@ export interface LoginPayload {
   email: string;
   password: string;
 }
-
 export interface SignupPayload {
-  email: string;
-  password: string;
   name: string;
+  email: string;
+  mobile: string;
+  password: string;
+  profileImage?: File | null; // Add this line
 }

@@ -16,11 +16,15 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
-// Icons
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
+
+// Import local images
+import slide1 from "../../public/banner/slide1.jpg";
+import slide2 from "../../public/banner/slide2.jpg";
+import slide3 from "../../public/banner/slide3.png";
 
 // Swiper Styles
 import "swiper/css";
@@ -29,17 +33,17 @@ import "swiper/css/pagination";
 
 const BANNER_IMAGES = [
   {
-    url: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2000",
+    image: slide1,
     title: "India's No. 1 Online Bus Ticket Booking Site",
     sub: "Trusted by over 25 million happy customers globally."
   },
   {
-    url: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=2000",
+    image: slide2,
     title: "Travel Safely with Top Rated Operators",
     sub: "Rigorous safety checks for every journey."
   },
   {
-    url: "https://images.unsplash.com/photo-1562620644-64049873d699?q=80&w=2000",
+    image: slide3,
     title: "Flat 20% Off on your First Booking",
     sub: "Use code: FIRST20 and save big on your first trip."
   },
@@ -63,7 +67,8 @@ export default function Banner() {
                 sx={{
                   height: "100%",
                   width: "100%",
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${item.url})`,
+                  // Accessing the .src property from the Next.js static image import
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${item.image.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   display: "flex",
