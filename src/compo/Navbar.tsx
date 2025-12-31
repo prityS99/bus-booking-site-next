@@ -21,7 +21,7 @@ import LoginIcon from "@mui/icons-material/Login";
 import { usePathname, useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import CloseIcon from '@mui/icons-material/Close';
-import logo from "../../public/logo/logo.jpg";
+import logo from "../../public/logo/logo.png";
 import { AppDispatch, RootState } from "@/hooks/store";
 import { logoutUser } from "@/hooks/slices/authThunks";
 

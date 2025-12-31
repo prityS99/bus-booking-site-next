@@ -21,9 +21,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import SecurityIcon from "@mui/icons-material/Security";
-
-// Import your logo
-import logo from "../../public/logo/logo.jpg";
+import logo from "../../public/logo/logo.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
