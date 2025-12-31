@@ -23,7 +23,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import SecurityIcon from "@mui/icons-material/Security";
 
 // Import your logo
-import logo from "../../public/logo/logo.png";
+import logo from "../../public/logo/logo.jpg";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -121,7 +121,7 @@ export default function Footer() {
           <Grid size={{ xs: 12, lg: 4 }}>
             <Stack spacing={3}>
               <Box>
-                <Image src={logo} alt="RedBus Logo" width={110} height={40} style={{ objectFit: 'contain' }} />
+                <Image src={logo} alt="Logo" width={180} height={120} style={{ objectFit: 'contain' }} />
               </Box>
               <Typography variant="body2" sx={{ color: "#6B7280", lineHeight: 1.8, maxWidth: "320px" }}>
                 RedBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. We offer the best prices and widest choices.
